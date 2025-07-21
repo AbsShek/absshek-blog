@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemanticKernel.Conversation
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemanticKernel.StreamingResponse", "SemanticKernel.StreamingResponse\SemanticKernel.StreamingResponse.csproj", "{A74079BB-5A55-402A-8271-482742A2A405}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KernelMemory.InMemory", "KernelMemory.InMemory\KernelMemory.InMemory.csproj", "{A7689A47-A2E9-4E45-A69E-06A13511EE3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A74079BB-5A55-402A-8271-482742A2A405}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A74079BB-5A55-402A-8271-482742A2A405}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A74079BB-5A55-402A-8271-482742A2A405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7689A47-A2E9-4E45-A69E-06A13511EE3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7689A47-A2E9-4E45-A69E-06A13511EE3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7689A47-A2E9-4E45-A69E-06A13511EE3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7689A47-A2E9-4E45-A69E-06A13511EE3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
