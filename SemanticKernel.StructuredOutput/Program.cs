@@ -16,9 +16,9 @@ var configuration = new ConfigurationBuilder()
 
 var kernel = Kernel.CreateBuilder()
     .AddAzureOpenAIChatCompletion(
-        deploymentName: configuration["azureAiStudioDeploymentName"],
-        endpoint: configuration["azureAiStudioEndpoint"],
-        apiKey: configuration["azureAiStudioApiKey"])
+        deploymentName: configuration["azureAiStudioDeploymentName"] ?? throw new InvalidOperationException("azureAiStudioDeploymentName is not set."),
+        endpoint: configuration["azureAiStudioEndpoint"] ?? throw new InvalidOperationException("azureAiStudioEndpoint is not set."),
+        apiKey: configuration["azureAiStudioApiKey"] ?? throw new InvalidOperationException("azureAiStudioApiKey is not set."))
     .Build();
 var chatCompletionService = kernel.GetRequiredService<IChatCompletionService>();
 

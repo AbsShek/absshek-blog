@@ -19,8 +19,8 @@ var configuration = new ConfigurationBuilder()
 // Notice how easy it is to swap out the connector.
 var kernel = Kernel.CreateBuilder()
     .AddOpenAIChatCompletion(
-        modelId: configuration["openAiModelId"],
-        apiKey: configuration["openAiApiKey"]
+        modelId: configuration["openAiModelId"] ?? throw new InvalidOperationException("openAiModelId is not set."),
+        apiKey: configuration["openAiApiKey"] ?? throw new InvalidOperationException("openAiApiKey is not set.")
     )
     .Build();
 
